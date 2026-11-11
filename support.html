@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tiny Conquest Support</title>
+<meta name="description" content="Help, contact and FAQ for the Tiny Conquest mobile game.">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@700;800&display=swap">
+<style>
+:root{
+  --grass:#0d1330;--grass-deep:#050818;--ink:#1d2a44;--ink-soft:#4a5875;--paper:#fff8e8;--gold:#ffc23a;--royal:#2a63d6;--stone:#2c3548;--rule:rgba(29,42,68,.15);
+  --display:"Rubik","Arial Rounded MT Bold","Trebuchet MS",sans-serif;
+  --body:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--grass);color:var(--ink);font:17px/1.6 var(--body);min-height:100vh;display:flex;flex-direction:column}
+main{flex:1}
+a{color:var(--royal)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.top{padding-block:14px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.top a{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font:800 20px var(--display);text-shadow:none}
+.top img{width:40px;height:40px;border-radius:11px;border:2px solid var(--gold)}
+main{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:8px 56px}
+.doc{max-width:760px;margin:0 auto;background:var(--paper);border:3px solid var(--ink);border-radius:20px;box-shadow:0 6px 0 var(--grass-deep);padding:clamp(20px,5vw,44px)}
+h1,h2{font-family:var(--display);font-weight:800;line-height:1.1;text-wrap:balance;margin:0}
+h1{font-size:clamp(30px,6vw,42px)}
+h2{font-size:22px;margin-top:34px;padding-top:22px;border-top:2px dashed var(--rule)}
+p,ul{margin:12px 0 0}
+ul{padding-left:22px}
+li+li{margin-top:6px}
+.meta{color:var(--ink-soft);font-size:15px;margin-top:8px}
+.summary{background:#fff;border:2px solid var(--ink);border-radius:14px;padding:14px 18px;margin-top:22px}
+.summary b{font-family:var(--display);font-weight:800}
+.table{overflow-x:auto;margin-top:14px}
+table{border-collapse:collapse;width:100%;font-size:15px;min-width:520px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--rule)}
+th{font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft)}
+.mail{font-weight:800;user-select:all}
+footer{background:var(--stone);color:#cfd7e8;font-size:14px;padding-block:22px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+footer .in{max-width:760px;margin:0 auto;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+footer a{color:#fff}
+.contact{display:flex;flex-wrap:wrap;align-items:center;gap:12px;background:#fff;border:2px solid var(--ink);border-radius:14px;padding:14px 18px;margin-top:22px}
+.contact .mail{font-size:19px}
+.copy{font:700 14px var(--body);background:var(--ink);color:#fff;border:0;border-radius:999px;padding:8px 14px;cursor:pointer}
+.hint{flex-basis:100%;margin:0;color:var(--ink-soft);font-size:15px}
+details{border-top:2px dashed var(--rule);padding:14px 0}
+details:last-of-type{border-bottom:2px dashed var(--rule)}
+summary{cursor:pointer;font-weight:800;font-size:17.5px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:800 22px/1 var(--display);color:var(--royal)}
+details[open] summary::after{content:"\2212"}
+details p{color:var(--ink-soft)}
+.faq{margin-top:28px}
+</style>
+</head>
+<body>
+<header class="top"><a href="index.html"><img src="img/icon.webp" alt="">Tiny Conquest</a></header>
+<main>
+<article class="doc">
+  <h1>Support</h1>
+  <p class="meta">Tiny Conquest by Lemons</p>
+  <p>Found a bug, lost a purchase or have an idea for the game? Write to us. We read every message and usually reply within 2 business days.</p>
+  <div class="contact">
+    <span class="mail" id="mail">alexeytarasenkov@gmail.com</span>
+    <button class="copy" type="button" id="copy">Copy email</button>
+    <p class="hint">Please include your device model, iOS or Android version, and the level where the problem happened.</p>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  <div class="faq">
+    <details open>
+      <summary>I bought “No Ads” but see ads after reinstalling</summary>
+      <p>Open the store from the main menu and tap <b>Restore Purchases</b>. Make sure you are signed in with the same Apple ID or Google account you used for the purchase.</p>
+    </details>
+    <details>
+      <summary>Will my progress transfer to a new phone?</summary>
+      <p>Not yet. Level progress and settings are saved on your device only, so deleting the game or switching phones starts you from the first level. Purchases can always be restored.</p>
+    </details>
+    <details>
+      <summary>How do I select units?</summary>
+      <p>Swipe across your warriors to select them, then tap the ground to move or tap an enemy to attack. Double-tap selects all units or clears the selection. If you prefer drawing a selection box, switch Box / Swipe mode in Settings.</p>
+    </details>
+    <details>
+      <summary>Can I play in portrait or landscape?</summary>
+      <p>Both. Pick portrait, landscape or auto-rotation in Settings, and the interface adjusts.</p>
+    </details>
+    <details>
+      <summary>A level is too hard</summary>
+      <p>Mix unit types: knights in front, archers and mages behind. Scout with a small group first, because the fog of war hides orc towers. If you are still stuck, tell us which level. Your feedback directly shapes balance updates.</p>
+    </details>
+    <details>
+      <summary>How do I get a refund?</summary>
+      <p>Payments are processed by Apple or Google, so refunds are handled by them: <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> for App Store purchases, or your Google Play order history for Android.</p>
+    </details>
+    <details>
+      <summary>What data does the game collect?</summary>
+      <p>Anonymous gameplay statistics and device information through Unity services, and nothing like your name or email. Details are in our <a href="privacy.html">Privacy Policy</a>.</p>
+    </details>
+  </div>
+</article>
+</main>
+<footer><div class="in"><span>© 2026 Lemons</span><span><a href="index.html">Home</a> · <a href="privacy.html">Privacy Policy</a></span></div></footer>
+<script>
+document.getElementById("copy").addEventListener("click", function(){
+  var b = this, t = document.getElementById("mail").textContent;
+  function done(ok){ b.textContent = ok ? "Copied" : "Select and copy"; setTimeout(function(){ b.textContent = "Copy email"; }, 1800); }
+  if (navigator.clipboard) navigator.clipboard.writeText(t).then(function(){ done(true); }, function(){ select(); done(false); });
+  else { select(); done(false); }
+  function select(){ var r = document.createRange(); r.selectNodeContents(document.getElementById("mail")); var s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+});
+</script>
+</body>
+</html>
